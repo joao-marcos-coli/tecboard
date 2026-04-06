@@ -1,0 +1,139 @@
+/*  Fontes por meio de download */
+@font-face {
+    font-family: "Unbounded";
+    src: url("../fontes/Unbounded-Bold.ttf") /* ../ --> voltar um nível */
+    format("truetype"); /* Formato .tff */
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap; /* Se o arquivo estiver demorando, irá mostrar uma fonte diferente */
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fontes/Poppins-Bold.ttf") /* ../ --> voltar um nível */
+    format("truetype"); /* Formato .tff */
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; /* Se o arquivo estiver demorando, irá mostrar uma fonte diferente */
+}
+
+
+/* Tirando configurações que vem por padrão no navegador */
+*{  /* asterisco = tudo */
+    margin: 0;
+    padding: 0;
+}
+
+/*  Exemplo do vermelho
+        hexadecimal: #ff0000;
+        nomeada: red;
+        rgb(255,0,0);  rgb --> red, green, blue
+*/
+
+body{
+    background-color: #0E1014;
+    /*color: #FFFFFF; --> todos textos brancos // mais fácil */
+}
+
+
+header img{
+    display: block;
+    margin: 75px 0 0 360px;  
+}
+
+
+/* 
+h1, p, a{
+    color: #FFFFFF;
+}*/
+
+h1{
+    font-size: 64px;
+    font-family: "unbounded", sans-serif; /* Se a fonte unbounded nao funcionar, sans-serif entra em ação*/
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+h1 span{
+    color: #9747FF;
+}
+
+p{
+    font-size: 20px;
+    font-family: "poppins", "unbounded";
+    text-align: center;
+    margin: 24px auto 0;
+    width: 792px;
+}
+
+.cor-branca{
+    color: #FFFFFF;
+}
+
+a{
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px; 
+    text-decoration: none;
+    background-color: #9747FF;
+    width: 340px; /* Largura */
+    height: 66px; /* Altura */
+    display: block; /* Permite a manipulação de altura de largura */
+    text-align: center; /* Centralizar horizontalmente o texto */
+    line-height: 66px; /* Centralizar verticalmente o texto */
+    border-radius: 36px;
+    margin: 40px auto; /* faz uma margem de 40px encima e embaixo e as laterais vaoa utomaticamente */   
+}
+
+a:hover{
+    background-color: #8233E8; /* usamos um pseudo-elemento para acessar estados de um elemento */
+}
+
+section img{  /*  Imagem só da section*/
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+
+    header img {
+        margin: 65px 0 0 60px;
+    }
+
+    h1{
+        margin-top: 50px;
+
+    }
+
+    p {
+        width: 648px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    header img {
+        margin: 32px 0 0 16px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 20px;
+        width: 340px;
+    }
+
+    a{
+        font-size: 20px;
+        width: 251px;
+    }
+
+    section img {
+        width: 340px;
+        height: 230px;
+    }
+}
