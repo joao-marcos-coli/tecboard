@@ -1,51 +1,34 @@
-/*  Fontes por meio de download */
 @font-face {
     font-family: "Unbounded";
-    src: url("../fontes/Unbounded-Bold.ttf") /* ../ --> voltar um nível */
-    format("truetype"); /* Formato .tff */
+    src: url("../fontes/Unbounded-Bold.ttf") 
+    format("truetype"); 
     font-weight: 700;
     font-style: normal;
-    font-display: swap; /* Se o arquivo estiver demorando, irá mostrar uma fonte diferente */
+    font-display: swap; 
 }
 
 @font-face {
     font-family: "Poppins";
-    src: url("../fontes/Poppins-Bold.ttf") /* ../ --> voltar um nível */
-    format("truetype"); /* Formato .tff */
+    src: url("../fontes/Poppins-Bold.ttf") 
+    format("truetype"); 
     font-weight: 400;
     font-style: normal;
-    font-display: swap; /* Se o arquivo estiver demorando, irá mostrar uma fonte diferente */
+    font-display: swap; 
 }
 
-
-/* Tirando configurações que vem por padrão no navegador */
-*{  /* asterisco = tudo */
+*{  
     margin: 0;
     padding: 0;
 }
 
-/*  Exemplo do vermelho
-        hexadecimal: #ff0000;
-        nomeada: red;
-        rgb(255,0,0);  rgb --> red, green, blue
-*/
-
 body{
     background-color: #0E1014;
-    /*color: #FFFFFF; --> todos textos brancos // mais fácil */
 }
-
 
 header img{
     display: block;
     margin: 75px 0 0 360px;  
 }
-
-
-/* 
-h1, p, a{
-    color: #FFFFFF;
-}*/
 
 h1{
     font-size: 64px;
@@ -53,7 +36,6 @@ h1{
     font-weight: bold;
     text-align: center;
     margin-top: 60px;
-
 }
 
 h1 span{
@@ -78,20 +60,20 @@ a{
     font-size: 24px; 
     text-decoration: none;
     background-color: #9747FF;
-    width: 340px; /* Largura */
-    height: 66px; /* Altura */
-    display: block; /* Permite a manipulação de altura de largura */
-    text-align: center; /* Centralizar horizontalmente o texto */
-    line-height: 66px; /* Centralizar verticalmente o texto */
+    width: 340px; 
+    height: 66px; 
+    display: block; 
+    text-align: center; 
+    line-height: 66px; 
     border-radius: 36px;
-    margin: 40px auto; /* faz uma margem de 40px encima e embaixo e as laterais vaoa utomaticamente */   
+    margin: 40px auto;    
 }
 
 a:hover{
-    background-color: #8233E8; /* usamos um pseudo-elemento para acessar estados de um elemento */
+    background-color: #8233E8; 
 }
 
-section img{  /*  Imagem só da section*/
+section img{  
     display: block;
     width: 792px;
     height: 446px;
@@ -106,7 +88,6 @@ section img{  /*  Imagem só da section*/
 
     h1{
         margin-top: 50px;
-
     }
 
     p {
@@ -119,9 +100,11 @@ section img{  /*  Imagem só da section*/
     header img {
         margin: 32px 0 0 16px;
     }
+
     h1 {
         font-size: 40px;
     }
+    
     p {
         font-size: 20px;
         width: 340px;
